@@ -1,0 +1,15 @@
+D:\Programming\Proper\Backend\Proper.Context\bin\Debug\net6.0\Proper.Context.deps.json
+D:\Programming\Proper\Backend\Proper.Context\bin\Debug\net6.0\Proper.Context.dll
+D:\Programming\Proper\Backend\Proper.Context\bin\Debug\net6.0\Proper.Context.pdb
+D:\Programming\Proper\Backend\Proper.Context\bin\Debug\net6.0\Proper.Core.dll
+D:\Programming\Proper\Backend\Proper.Context\bin\Debug\net6.0\Proper.Core.pdb
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\Proper.Context.csproj.AssemblyReference.cache
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\Proper.Context.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\Proper.Context.AssemblyInfoInputs.cache
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\Proper.Context.AssemblyInfo.cs
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\Proper.Context.csproj.CoreCompileInputs.cache
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\Proper.Context.csproj.CopyComplete
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\Proper.Context.dll
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\refint\Proper.Context.dll
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\Proper.Context.pdb
+D:\Programming\Proper\Backend\Proper.Context\obj\Debug\net6.0\ref\Proper.Context.dll

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "Tv/EbvKkiK9uMdN40iKqfQmspVdmrmIz9kOhm2js4Ro=",
+  "Source": "Proper",
+  "BasePath": "_content/Proper",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Proper\\wwwroot",
+      "Source": "Proper",
+      "ContentRoot": "D:\\Programming\\Proper\\Backend\\Proper\\wwwroot\\",
+      "BasePath": "_content/Proper",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Programming\\Proper\\Backend\\Proper\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Proper.styles.css",
+      "SourceId": "Proper",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Programming\\Proper\\Backend\\Proper\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Proper",
+      "RelativePath": "Proper.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Programming\\Proper\\Backend\\Proper\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Proper.styles.css"
+    },
+    {
+      "Identity": "D:\\Programming\\Proper\\Backend\\Proper\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Proper.bundle.scp.css",
+      "SourceId": "Proper",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Programming\\Proper\\Backend\\Proper\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Proper",
+      "RelativePath": "Proper.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Programming\\Proper\\Backend\\Proper\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Proper.bundle.scp.css"
+    }
+  ]
+}

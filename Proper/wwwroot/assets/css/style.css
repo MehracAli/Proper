@@ -1,0 +1,348 @@
+body main #FruitCustomize .customizeAndImage {
+  display: flex;
+  justify-content: space-between;
+}
+body main #FruitCustomize .customizeAndImage .customizeImage {
+  background-image: url("../images/SliderLogo.png");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+@media only screen and (max-width: 820px) {
+  body main #FruitCustomize .customizeAndImage .customizeImage {
+    height: 600px;
+    background-size: 100%;
+  }
+}
+@media only screen and (max-width: 391px) {
+  body main #FruitCustomize .customizeAndImage .customizeImage {
+    height: 330px;
+    background-size: 100%;
+  }
+}
+body main #FruitCustomize .customizeAndImage .customizeImage .button {
+  margin-top: 25px;
+  display: none;
+  text-align: end;
+  position: relative;
+  top: 500px;
+}
+@media only screen and (max-width: 820px) {
+  body main #FruitCustomize .customizeAndImage .customizeImage .button {
+    background-size: 100%;
+    display: block;
+  }
+  body main #FruitCustomize .customizeAndImage .customizeImage .button button {
+    color: #6E7286;
+    border-radius: 30px 0 0 30px;
+    padding: 10px 12px;
+    font-size: 17px;
+    border: none;
+    transition: 0.3s;
+  }
+  body main #FruitCustomize .customizeAndImage .customizeImage .button button:hover {
+    background-color: white;
+    color: #2EDC87;
+  }
+  body main #FruitCustomize .customizeAndImage .customizeImage .button button i {
+    font-size: 15px;
+    margin: 7px 0 7px 10px;
+  }
+}
+@media only screen and (max-width: 391px) {
+  body main #FruitCustomize .customizeAndImage .customizeImage .button {
+    top: 230px;
+  }
+  body main #FruitCustomize .customizeAndImage .customizeImage .button button {
+    color: #6E7286;
+    border-radius: 30px 0 0 30px;
+    padding: 5px 12px;
+    font-size: 13px;
+    border: none;
+    transition: 0.3s;
+  }
+  body main #FruitCustomize .customizeAndImage .customizeImage .button button:hover {
+    background-color: white;
+    color: #2EDC87;
+  }
+  body main #FruitCustomize .customizeAndImage .customizeImage .button button i {
+    font-size: 12px;
+    margin: 7px 0 7px 10px;
+  }
+}
+body main #FruitCustomize .customizeAndImage .customizeText {
+  background-color: #23BE7B;
+  width: 778px;
+  height: 618px;
+}
+body main #FruitCustomize .customizeAndImage .customizeText .text-button {
+  position: relative;
+  top: 100px;
+  left: 20px;
+  color: #126940;
+}
+body main #FruitCustomize .customizeAndImage .customizeText .text-button .text p {
+  font-family: AnekTamil-Regular;
+}
+body main #FruitCustomize .customizeAndImage .customizeText .text-button .text h1 {
+  font-size: 60px;
+  font-family: AnekTamil-SemiBold;
+}
+body main #FruitCustomize .customizeAndImage .customizeText .text-button .button {
+  margin-top: 25px;
+}
+body main #FruitCustomize .customizeAndImage .customizeText .text-button .button button {
+  color: #6E7286;
+  border-radius: 30px;
+  padding: 13px 20px;
+  border: none;
+  transition: 0.3s;
+  font-family: AnekTamil-Medium;
+}
+body main #FruitCustomize .customizeAndImage .customizeText .text-button .button button:hover {
+  background-color: white;
+  color: #2EDC87;
+}
+body main #FruitCustomize .customizeAndImage .customizeText .text-button .button button i {
+  margin: 7px 10px;
+}
+body main #SpecialOffers {
+  margin-top: 70px;
+}
+body main #SpecialOffers .specialTitle h1 {
+  font-family: AnekTamil-SemiBold;
+  color: #23BE7B;
+}
+@media only screen and (max-width: 820px) {
+  body main #SpecialOffers .specialTitle h1 {
+    text-align: center;
+  }
+}
+body main #SpecialOffers .seeMore {
+  text-align: end;
+}
+@media only screen and (max-width: 820px) {
+  body main #SpecialOffers .seeMore {
+    margin-top: 0;
+    text-align: center;
+  }
+}
+body main #SpecialOffers .seeMore p a {
+  color: #2EDC87;
+}
+body main #SpecialOffers .image-info {
+  margin-top: 25px;
+}
+body main #SpecialOffers .image-info .image-icon {
+  position: relative;
+  width: 288px;
+}
+body main #SpecialOffers .image-info .image-icon .image img {
+  width: 288;
+  height: 268px;
+}
+body main #SpecialOffers .image-info .image-icon .heartIcon {
+  padding: 10px;
+  background-color: #F6F7F9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 12px;
+}
+body main #SpecialOffers .image-info .image-icon .heartIcon i {
+  font-size: 20px;
+  color: #8A8FA5;
+  transition: 0.3s;
+}
+body main #SpecialOffers .image-info .image-icon .heartIcon i:hover {
+  color: #2EDC87;
+}
+body main #SpecialOffers .image-info .info {
+  width: 288px;
+  background-color: #F9F9F9;
+  padding: 6px;
+}
+body main #SpecialOffers .image-info .info .rating {
+  display: flex;
+  color: #2EDC87;
+}
+body main #SpecialOffers .image-info .info .rating .star-icon {
+  padding: 0 7px;
+}
+body main #SpecialOffers .image-info .info .name-comp h3 {
+  font-family: AnekTamil-SemiBold;
+}
+body main #SpecialOffers .image-info .info .name-comp h3 a {
+  color: #525666;
+  text-decoration: none;
+}
+body main #SpecialOffers .image-info .info .name-comp p {
+  color: #8A8FA5;
+  font-family: AnekTamil-Regular;
+}
+body main #SpecialOffers .image-info .info .dollar-price {
+  color: #6E7286;
+  font-family: AnekTamil-SemiBold;
+}
+body main #Process {
+  margin-top: 100px;
+}
+body main #Process .allInfo {
+  background-color: #126940;
+  padding-bottom: 60px;
+}
+body main #Process .allInfo .process-title-desc {
+  padding: 30px 0;
+  color: #23BE7B;
+}
+body main #Process .allInfo .process-title-desc h2 {
+  width: 40%;
+  font-family: AnekTamil-SemiBold;
+}
+@media only screen and (max-width: 820px) {
+  body main #Process .allInfo .process-title-desc h2 {
+    width: 100%;
+  }
+}
+body main #Process .allInfo .process-title-desc p {
+  font-family: AnekTamil-Regular;
+  width: 67%;
+}
+@media only screen and (max-width: 820px) {
+  body main #Process .allInfo .process-title-desc p {
+    margin-top: 10px;
+    width: 80%;
+  }
+}
+body main #Process .allInfo .processFruits1 {
+  background-color: #EDC641;
+}
+body main #Process .allInfo .processFruits2 {
+  background-color: #F68048;
+}
+body main #Process .allInfo .processFruits3 {
+  background-color: #F2E0B1;
+}
+body main #Process .allInfo .processFruits4 {
+  background-color: #23BE7B;
+}
+@media only screen and (min-width: 822px) {
+  body main #Process .allInfo .processes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+}
+body main #Process .allInfo .processes .col-12 {
+  border-radius: 10px;
+  padding: 50px 0 22px 30px;
+}
+body main #Process .allInfo .processes .col-12 .process-image {
+  width: 70px;
+  height: 57px;
+}
+body main #Process .allInfo .processes .col-12 .process-image img {
+  width: 100%;
+}
+body main #Process .allInfo .processes .col-12 .process-name .name1,
+body main #Process .allInfo .processes .col-12 .process-info .name1 {
+  color: #776320;
+}
+body main #Process .allInfo .processes .col-12 .process-name .name2,
+body main #Process .allInfo .processes .col-12 .process-info .name2 {
+  color: #864323;
+}
+body main #Process .allInfo .processes .col-12 .process-name .name3,
+body main #Process .allInfo .processes .col-12 .process-info .name3 {
+  color: #78705C;
+}
+body main #Process .allInfo .processes .col-12 .process-name .name4,
+body main #Process .allInfo .processes .col-12 .process-info .name4 {
+  color: #126940;
+}
+body main #Process .allInfo .processes .col-12 .process-name h2,
+body main #Process .allInfo .processes .col-12 .process-info h2 {
+  font-family: AnekTamil-SemiBold;
+  padding: 20px 0;
+}
+body main #Process .allInfo .processes .col-12 .process-info {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 820px) {
+  body main #Process .allInfo .processes .col-12 .process-info {
+    margin-top: 30px;
+  }
+}
+body main #Process .allInfo .processes .col-12 .process-info p {
+  width: 82%;
+  font-family: AnekTamil-Medium;
+}
+body main #Orchard .info-image {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2E0B1;
+}
+@media only screen and (max-width: 820px) {
+  body main #Orchard .info-image {
+    height: 220px;
+  }
+}
+body main #Orchard .info-image .title-button {
+  width: 50%;
+  position: relative;
+  top: 130px;
+  left: 170px;
+}
+@media only screen and (max-width: 820px) {
+  body main #Orchard .info-image .title-button {
+    top: 40px;
+    width: 100%;
+    left: 0;
+    margin-left: 40px;
+  }
+}
+body main #Orchard .info-image .title-button .title {
+  width: 60%;
+}
+body main #Orchard .info-image .title-button .title p {
+  color: #78705C;
+  line-height: 10px;
+}
+body main #Orchard .info-image .title-button .title h1 {
+  font-family: AnekTamil-SemiBold;
+  font-size: 54px;
+  color: #78705C;
+}
+@media only screen and (max-width: 820px) {
+  body main #Orchard .info-image .title-button .title h1 {
+    font-size: 20px;
+  }
+}
+body main #Orchard .info-image .title-button .button button {
+  border-radius: 20px;
+  padding: 10px 22px;
+  color: #6E7286;
+  background-color: white;
+  border-color: #6E7286;
+}
+@media only screen and (max-width: 820px) {
+  body main #Orchard .info-image .title-button .button button {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+}
+body main #Orchard .info-image .title-button .button button:hover {
+  color: #78705C;
+  background-color: #F2E0B1;
+  border-color: white;
+}
+body main #Orchard .info-image .orchardImage {
+  width: 778px;
+}
+@media only screen and (max-width: 820px) {
+  body main #Orchard .info-image .orchardImage {
+    display: none;
+  }
+}
+body main #Orchard .info-image .orchardImage img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,302 @@
+body main {
+  font-family: "AnekTamil-Medium";
+}
+body main .salad-background .passage {
+  margin: 85px 0 10px 3px;
+}
+body main .salad-background .passage span {
+  font-size: 15px;
+}
+body main .salad-background .passage span a {
+  transition: 0.3s;
+  color: #A6ABC4;
+}
+body main .salad-background .passage span a:hover {
+  color: #23BE7B;
+}
+body main .salad-background .passage span .home {
+  color: #A6ABC4;
+}
+body main .salad-background .passage span .detail {
+  color: #525666;
+}
+body main #Detail {
+  color: #525666;
+}
+body main #Detail .image img {
+  width: 100%;
+}
+body main #Detail .name-price p {
+  font-size: 21px;
+}
+body main #Detail .rating {
+  display: flex;
+}
+body main #Detail .rating .star-icon i {
+  font-size: 14px;
+}
+body main #Detail .rating .point {
+  padding: 0 12px 0 6px;
+}
+body main #Detail .rating .review {
+  color: #2EDC87;
+}
+body main #Detail .rating .review p {
+  transition: 0.3s;
+  cursor: pointer;
+}
+body main #Detail .rating .review p i {
+  font-size: 14px;
+}
+body main #Detail .rating .review p:hover {
+  text-decoration: underline;
+}
+body main #Detail .composition {
+  display: flex;
+}
+body main #Detail .composition .fruit {
+  margin: 0 12px;
+  border: 1px solid #89E9BC;
+  border-radius: 24px;
+  height: 40px;
+  padding: 15px 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  font-size: 15px;
+}
+body main #Detail .composition .fruit:hover {
+  color: #2EDC87;
+  border-color: #525666;
+}
+body main #Detail .composition .fruit .fruit-name p {
+  color: #A6ABC4;
+}
+body main #Detail .composition .fruit .icon {
+  margin: 0 0 16px 6px;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #525666;
+  cursor: pointer;
+}
+body main #Detail .composition .fruit .icon i {
+  margin: 2px;
+}
+body main #Detail .case-size {
+  width: 100%;
+}
+body main #Detail .case-size .select-size {
+  margin-top: 30px;
+}
+body main #Detail .case-size .sizes {
+  width: 100%;
+}
+body main #Detail .case-size .sizes ul {
+  list-style: none;
+  width: 100%;
+}
+body main #Detail .case-size .sizes ul li {
+  margin-top: 15px;
+  color: #525666;
+  border-bottom: 1px solid #d7d7da;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+body main #Detail .case-size .sizes ul li p span {
+  color: #A6ABC4;
+}
+body main #Detail .toppings .add-toppings {
+  margin-top: 30px;
+}
+body main #Detail .toppings .topping-fruit {
+  display: flex;
+  flex-wrap: wrap;
+  width: 82%;
+}
+body main #Detail .toppings .topping-fruit .image-name {
+  margin-left: 12px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+body main #Detail .toppings .topping-fruit .image-name:hover .name {
+  color: #23BE7B;
+}
+body main #Detail .toppings .topping-fruit .image-name .image {
+  width: 96px;
+  height: 84px;
+  border-radius: 4px;
+  background-color: #F6F7F9;
+}
+body main #Detail .toppings .topping-fruit .image-name .image img {
+  width: 77px;
+  height: 66px;
+  margin: 9px 10px;
+}
+body main #Detail .toppings .topping-fruit .image-name .name {
+  text-align: center;
+  transition: 0.3s;
+}
+body main #Detail .quantity-order .name {
+  margin-top: 22px;
+}
+body main #Detail .quantity-order .quantity {
+  margin-left: 10px;
+}
+body main #Detail .quantity-order .quantity input {
+  text-align: center;
+  width: 14%;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+  background-color: #EBFBF4;
+}
+body main #Detail .quantity-order .quantity input:focus {
+  outline: none;
+}
+body main #Detail .quantity-order .order {
+  display: flex;
+  margin-top: 20px;
+}
+body main #Detail .quantity-order .order .button {
+  width: 70%;
+}
+body main #Detail .quantity-order .order .button button {
+  width: 95%;
+  border: none;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #23BE7B;
+  color: white;
+  transition: 0.3s;
+}
+body main #Detail .quantity-order .order .button button:hover {
+  background-color: #1b9e65;
+}
+body main #Detail .quantity-order .order .save-icon {
+  background-color: #F6F7F9;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+body main #Detail .quantity-order .order .save-icon:hover {
+  background-color: #ededed;
+}
+body main #Detail .quantity-order .order .save-icon i {
+  font-size: 31px;
+  color: #8A8FA5;
+}
+body main #Vitamins {
+  margin-top: 80px;
+}
+body main #Vitamins .vita {
+  background-color: #F6F7F9;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+body main #Vitamins .vita .title {
+  margin-top: 14px;
+}
+body main #Vitamins .vita .fruit-info {
+  display: flex;
+}
+body main #Vitamins .vita .fruit-info .fruit-name-image .name h6 {
+  color: #FB4C4C;
+}
+body main #Vitamins .vita .fruit-info .fruit-name-image .image {
+  width: 96px;
+  height: 84px;
+}
+body main #Vitamins .vita .fruit-info .fruit-name-image .image img {
+  width: 77px;
+  height: 66px;
+}
+body main #Vitamins .vita .fruit-info .info {
+  margin: 0 0 0 20px;
+}
+body main #SpecialOffers {
+  padding: 20px 0 70px 0;
+  margin-top: 70px;
+}
+body main #SpecialOffers .specialTitle h1 {
+  font-family: AnekTamil-SemiBold;
+  color: #23BE7B;
+}
+@media only screen and (max-width: 820px) {
+  body main #SpecialOffers .specialTitle h1 {
+    text-align: center;
+  }
+}
+body main #SpecialOffers .seeMore {
+  text-align: end;
+}
+@media only screen and (max-width: 820px) {
+  body main #SpecialOffers .seeMore {
+    margin-top: 0;
+    text-align: center;
+  }
+}
+body main #SpecialOffers .seeMore p a {
+  color: #2EDC87;
+}
+body main #SpecialOffers .image-info {
+  margin-top: 25px;
+}
+body main #SpecialOffers .image-info .image-icon {
+  position: relative;
+  width: 288px;
+}
+body main #SpecialOffers .image-info .image-icon .image img {
+  width: 288;
+  height: 268px;
+}
+body main #SpecialOffers .image-info .image-icon .heartIcon {
+  padding: 10px;
+  background-color: #F6F7F9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 12px;
+}
+body main #SpecialOffers .image-info .image-icon .heartIcon i {
+  font-size: 20px;
+  color: #8A8FA5;
+  transition: 0.3s;
+}
+body main #SpecialOffers .image-info .image-icon .heartIcon i:hover {
+  color: #2EDC87;
+}
+body main #SpecialOffers .image-info .info {
+  width: 288px;
+  background-color: #F9F9F9;
+  padding: 6px;
+}
+body main #SpecialOffers .image-info .info .rating {
+  display: flex;
+  color: #2EDC87;
+}
+body main #SpecialOffers .image-info .info .rating .star-icon {
+  padding: 0 7px;
+}
+body main #SpecialOffers .image-info .info .name-comp h3 {
+  font-family: AnekTamil-SemiBold;
+}
+body main #SpecialOffers .image-info .info .name-comp h3 a {
+  color: #525666;
+  text-decoration: none;
+}
+body main #SpecialOffers .image-info .info .name-comp p {
+  color: #8A8FA5;
+  font-family: AnekTamil-Regular;
+}
+body main #SpecialOffers .image-info .info .dollar-price {
+  color: #6E7286;
+  font-family: AnekTamil-SemiBold;
+}/*# sourceMappingURL=detail.css.map */

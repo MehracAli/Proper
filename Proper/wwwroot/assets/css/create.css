@@ -1,0 +1,248 @@
+main .salad-background {
+  font-family: AnekTamil-Medium;
+}
+main .salad-background .passage {
+  margin: 85px 0 10px 3px;
+}
+main .salad-background .passage span {
+  font-size: 15px;
+}
+main .salad-background .passage span a {
+  transition: 0.3s;
+  color: #A6ABC4;
+}
+main .salad-background .passage span a:hover {
+  color: #23BE7B;
+}
+main .salad-background .passage span .home {
+  color: #A6ABC4;
+}
+main .salad-background .passage span .detail {
+  color: #525666;
+}
+main #Create {
+  color: #525666;
+}
+main #Create .create-title {
+  margin-bottom: 15px;
+  display: flex;
+}
+main #Create .create-title p {
+  background-color: #2EDC87;
+  color: white;
+  margin: 8px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+main #Create .create-title h2 {
+  font-family: AnekTamil-SemiBold;
+}
+main #Create .all-infos {
+  padding: 22px;
+  background-color: #FAFAFB;
+}
+main #Create .all-infos .bowl-size {
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+main #Create .all-infos .bowl-size .title h5 {
+  font-family: AnekTamil-SemiBold;
+}
+main #Create .all-infos .bowl-size .select {
+  margin-left: 12px;
+}
+main #Create .all-infos .bowl-size .select label {
+  margin-right: 20px;
+}
+main #Create .all-infos .bowl-size .select label input {
+  margin: 0 18px;
+}
+main #Create .all-infos .spices ul {
+  list-style: none;
+}
+main #Create .all-infos .spices ul li {
+  border-bottom: 1px solid #e6e6e8;
+  margin: 27px 0;
+}
+main #Create .all-infos .spices ul li .name-icon {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+main #Create .all-infos .spices ul li .name-icon .icon i {
+  color: #CACDDC;
+}
+main #Create .all-infos .spices ul .name-and-fruits .name p {
+  color: #6E7286;
+}
+main #Create .all-infos .spices ul .name-and-fruits .topping-fruit {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main #Create .all-infos .spices ul .name-and-fruits .topping-fruit .image-name {
+  margin-left: 7px;
+  padding: 0 1px;
+  cursor: pointer;
+}
+main #Create .all-infos .spices ul .name-and-fruits .topping-fruit .image-name:hover .name {
+  color: #23BE7B;
+}
+main #Create .all-infos .spices ul .name-and-fruits .topping-fruit .image-name .image {
+  width: 96px;
+  height: 84px;
+  border-radius: 4px;
+  background-color: white;
+}
+main #Create .all-infos .spices ul .name-and-fruits .topping-fruit .image-name .image img {
+  width: 77px;
+  height: 66px;
+  margin: 9px 10px;
+}
+main #Create .all-infos .spices ul .name-and-fruits .topping-fruit .image-name .name {
+  text-align: center;
+  transition: 0.3s;
+}
+main #Create .all-infos .spices ul .name-and-fruits .select {
+  margin-left: 12px;
+}
+main #Create .all-infos .spices ul .name-and-fruits .select label {
+  margin-right: 20px;
+}
+main #Create .all-infos .spices ul .name-and-fruits .select label input {
+  margin: 0 18px;
+}
+main #Create .all-infos .shape-fruit {
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+main #Create .all-infos .shape-fruit .title h5 {
+  font-family: AnekTamil-SemiBold;
+}
+main #Create .all-infos .shape-fruit .select {
+  margin-left: 12px;
+}
+main #Create .all-infos .shape-fruit .select label {
+  margin-right: 20px;
+}
+main #Create .all-infos .shape-fruit .select label input {
+  margin: 0 18px;
+}
+main #Create .all-infos .comment {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+main #Create .all-infos .comment .title h5 {
+  font-family: AnekTamil-SemiBold;
+}
+main #Create .fruit-infos {
+  padding: 22px;
+  background-color: #FAFAFB;
+}
+main #Create .fruit-infos .caption {
+  border-bottom: 1px solid #e6e6e8;
+}
+main #Create .fruit-infos .caption .fruit-salad {
+  margin-bottom: 15px;
+  display: flex;
+}
+main #Create .fruit-infos .caption .fruit-salad p {
+  background-color: #2EDC87;
+  color: white;
+  margin: 4px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+main #Create .fruit-infos .caption .fruit-salad h4 {
+  font-family: AnekTamil-SemiBold;
+}
+main #Create .fruit-infos .selected-fruits {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #Create .fruit-infos .selected-fruits .fruit {
+  margin: 10px 12px;
+  border: 1px solid #89E9BC;
+  border-radius: 24px;
+  height: 40px;
+  padding: 15px 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  font-size: 15px;
+}
+@media only screen and (max-width: 820px) {
+  main #Create .fruit-infos .selected-fruits .fruit {
+    margin: 0 3px;
+  }
+}
+main #Create .fruit-infos .selected-fruits .fruit:hover {
+  color: #2EDC87;
+  border-color: #525666;
+}
+main #Create .fruit-infos .selected-fruits .fruit .fruit-name p {
+  color: #A6ABC4;
+}
+main #Create .fruit-infos .selected-fruits .fruit .icon {
+  margin: 0 0 16px 6px;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #525666;
+  cursor: pointer;
+}
+main #Create .fruit-infos .selected-fruits .fruit .icon i {
+  margin: 2px;
+}
+main #Create .fruit-infos .selected-fruits .not-changed {
+  background-color: #73E7AF;
+  color: white;
+  transition: 0.3s;
+}
+main #Create .fruit-infos .selected-fruits .not-changed:hover {
+  background-color: #5bc893;
+  color: white;
+  border-color: #89E9BC;
+}
+main #Create .fruit-infos .text-info {
+  margin-top: 20px;
+  width: 70%;
+}
+main #Create .fruit-infos .text-info p {
+  color: #525666;
+}
+main #Create .fruit-infos .total-add-basket {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+main #Create .fruit-infos .total-add-basket .total span {
+  color: #363947;
+  font-weight: bold;
+}
+main #Create .fruit-infos .total-add-basket .button {
+  width: 70%;
+  margin: 0 auto;
+}
+main #Create .fruit-infos .total-add-basket .button button {
+  width: 95%;
+  border: none;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #23BE7B;
+  color: white;
+  transition: 0.3s;
+}
+main #Create .fruit-infos .total-add-basket .button button:hover {
+  background-color: #1b9e65;
+}/*# sourceMappingURL=create.css.map */
