@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -15,11 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Proper.Context\Proper.Context.csproj" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="wwwroot\assets\images\home\banner\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Data\" />
+    <ProjectReference Include="..\Proper.Business\Proper.Business.csproj" />
   </ItemGroup>
 
 </Project>

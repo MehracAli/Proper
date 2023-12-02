@@ -29,6 +29,10 @@ namespace Proper.Context.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("BannerType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ButtonText")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

@@ -3,11 +3,14 @@ using Proper.Context.Contexts;
 
 var builder = WebApplication.CreateBuilder();
 
+builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddDbContext<ProperDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
+
 
 var app = builder.Build();
 

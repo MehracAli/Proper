@@ -17,7 +17,8 @@ namespace Proper.Controllers
         {
             HomeVM homeVM = new HomeVM()
             {
-                BannerVM = _context.Banners.Select(b => new BannerVM { 
+                BannerVM = _context.Banners.Select(b => new BannerVM
+                {
 
                     ImageURL = b.ImageURL,
                     Title = b.Title,

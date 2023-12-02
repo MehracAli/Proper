@@ -5,7 +5,7 @@ namespace Proper.Areas.Admin.ViewModels.MainVMs
 {
     public class HomeCrudVM
     {
-        public BannerCrudVM? BannerCrudVM { get; set;}
+        public IEnumerable<BannerCrudVM>? BannersVM { get; set; }
         public BannerCreateVM? BannerCreateVM { get; set; }
         public BannerEditVM? BannerEditVM { get; set; }
     }

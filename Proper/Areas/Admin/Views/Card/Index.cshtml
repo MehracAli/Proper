@@ -1,11 +1,13 @@
-﻿@model HomeCrudVM;
+﻿@using Proper.Areas.Admin.ViewModels.BannerVMs;
+@using Proper.Enums;
+@model HomeCrudVM;
 <div class="container-fluid">
     <div class="container-fluid">
         <div class="card">
             <div class="card-body">
                 <div class="banners">
                     <div class="banners-view">
-                        ///
+                       <h1>Banner Templates</h1>
                     </div>
                     <div class="banners-make">
                         <!-- Button trigger modal -->
@@ -17,8 +19,7 @@
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <form asp-controller="Banner" asp-action="Create" method="post" enctype="multipart/form-data">
-                                        <input type="hidden" asp-for="BannerCreateVM"/>
+                                <form asp-area="Admin" asp-controller="Banner" asp-action="Create" method="post" enctype="multipart/form-data">
                                     <div class="modal-header">
                                         <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Banner</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -27,18 +28,26 @@
                                             <div class="mb-3">
                                                 <label class="form-label">Image</label>
                                                 <input asp-for="BannerCreateVM.Image" class="form-control">
+                                                <span asp-validation-for="BannerCreateVM.Image"></span>
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label">Title</label>
                                                 <input asp-for="BannerCreateVM.Title" class="form-control">
+                                                <span asp-validation-for="BannerCreateVM.Title"></span>
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label">Button Text</label>
                                                 <input asp-for="BannerCreateVM.ButtonText" class="form-control">
+                                                <span asp-validation-for="BannerCreateVM.ButtonText"></span>
                                             </div>
+                                            <select asp-for="BannerCreateVM.BannerType" class="form-control" >
+                                                <option value="@BannerType.Head">Head</option>
+                                                <option value="@BannerType.Bottom">Bottom</option>
+                                            </select>
                                             <div class="mb-3">
                                                 <label class="form-label">Description</label>
                                                 <textarea asp-for="BannerCreateVM.Description" class="form-control"></textarea>
+                                                <span asp-validation-for="BannerCreateVM.Description"></span>
                                             </div>
                                     </div>
                                     <div class="modal-footer">
@@ -55,3 +64,6 @@
         </div>
     </div>
 </div>
+@section scripts{
+    <partial name="_validationPartial" />
+}
