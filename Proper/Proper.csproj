@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="wwwroot\assets\images\home\banner\" />
+    <Folder Include="wwwroot\assets\images\home\banners\" />
   </ItemGroup>
 
   <ItemGroup>

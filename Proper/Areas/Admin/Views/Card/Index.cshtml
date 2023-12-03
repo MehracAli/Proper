@@ -1,5 +1,4 @@
-﻿@using Proper.Areas.Admin.ViewModels.BannerVMs;
-@using Proper.Enums;
+﻿
 @model HomeCrudVM;
 <div class="container-fluid">
     <div class="container-fluid">
@@ -8,15 +7,83 @@
                 <div class="banners">
                     <div class="banners-view">
                        <h1>Banner Templates</h1>
+                       <div class="row">
+                           @foreach (BannerCrudVM banner in Model.BannersVM)
+                            {
+                                <div class="card" style="width: 18rem;">
+                                    <img src="~/@banner.ImageURL" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Title: @banner.Title</h5>
+                                        <p class="card-text">Description: @banner.Description</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Button Text: @banner.ButtonText</li>
+                                        <li class="list-group-item">Banner Type: @banner.BannerType</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="card-link btn btn-warning" data-bs-toggle="modal" data-bs-target="#editModal">
+                                            Edit
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <form asp-area="Admin" asp-controller="Banner" asp-action="Edit" method="post" enctype="multipart/form-data">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Banner</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Image</label>
+                                                                <input asp-for="BannerEditVM.Image" class="form-control">
+                                                                <span asp-validation-for="BannerEditVM.Image"></span>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Title</label>
+                                                                <input asp-for="BannerEditVM.Title" class="form-control">
+                                                                <span asp-validation-for="BannerEditVM.Title"></span>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Button Text</label>
+                                                                <input asp-for="BannerEditVM.ButtonText" class="form-control">
+                                                                <span asp-validation-for="BannerEditVM.ButtonText"></span>
+                                                            </div>
+                                                            <select asp-for="BannerEditVM.BannerType" class="form-control">
+                                                                <option value="@BannerType.Head">Head</option>
+                                                                <option value="@BannerType.Bottom">Bottom</option>
+                                                            </select>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Description</label>
+                                                                <textarea asp-for="BannerEditVM.Description" class="form-control"></textarea>
+                                                                <span asp-validation-for="BannerEditVM.Description"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="submit" class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="card-link btn btn-danger">Delete</a>
+                                    </div>
+                                </div>
+                            }
+                       </div>
                     </div>
                     <div class="banners-make">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        
+                        <button @(Model.BannersVM.Count() >= 2 ? "disabled":"") type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
                             Create New Banner
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <form asp-area="Admin" asp-controller="Banner" asp-action="Create" method="post" enctype="multipart/form-data">
@@ -41,7 +108,7 @@
                                                 <span asp-validation-for="BannerCreateVM.ButtonText"></span>
                                             </div>
                                             <select asp-for="BannerCreateVM.BannerType" class="form-control" >
-                                                <option value="@BannerType.Head">Head</option>
+                                                <option  value="@BannerType.Head">Head</option>
                                                 <option value="@BannerType.Bottom">Bottom</option>
                                             </select>
                                             <div class="mb-3">

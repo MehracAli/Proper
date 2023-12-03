@@ -8,5 +8,10 @@ namespace Proper.Areas.Admin.ViewModels.MainVMs
         public IEnumerable<BannerCrudVM>? BannersVM { get; set; }
         public BannerCreateVM? BannerCreateVM { get; set; }
         public BannerEditVM? BannerEditVM { get; set; }
+
+        public HomeCrudVM()
+        {
+            BannersVM = new List<BannerCrudVM>();
+        }
     }
 }

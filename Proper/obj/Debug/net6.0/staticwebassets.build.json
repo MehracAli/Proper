@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+MQXT58cKQZrJWqNrP1iUF/gm1xa36LZiXInSjO8VOk=",
+  "Hash": "g07wJFV1qgt68gf1ZXWnUgxbeNMLWbYoaQ4Kr1VDHF0=",
   "Source": "Proper",
   "BasePath": "_content/Proper",
   "Mode": "Default",
@@ -11898,6 +11898,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\FruitsProcess.png"
+    },
+    {
+      "Identity": "D:\\Programming\\Proper\\Backend\\Proper\\wwwroot\\assets\\images\\home\\banners\\443e2c85-c8d4-4eaa-b687-a6c0b5090ba7unnamed.jpg",
+      "SourceId": "Proper",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\Proper\\Backend\\Proper\\wwwroot\\",
+      "BasePath": "_content/Proper",
+      "RelativePath": "assets/images/home/banners/443e2c85-c8d4-4eaa-b687-a6c0b5090ba7unnamed.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\home\\banners\\443e2c85-c8d4-4eaa-b687-a6c0b5090ba7unnamed.jpg"
+    },
+    {
+      "Identity": "D:\\Programming\\Proper\\Backend\\Proper\\wwwroot\\assets\\images\\home\\banners\\619fdcea-437e-4f67-b5e2-5e7c68c58e2dunnamed.jpg",
+      "SourceId": "Proper",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\Proper\\Backend\\Proper\\wwwroot\\",
+      "BasePath": "_content/Proper",
+      "RelativePath": "assets/images/home/banners/619fdcea-437e-4f67-b5e2-5e7c68c58e2dunnamed.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\home\\banners\\619fdcea-437e-4f67-b5e2-5e7c68c58e2dunnamed.jpg"
     },
     {
       "Identity": "D:\\Programming\\Proper\\Backend\\Proper\\wwwroot\\assets\\images\\kiviciyelek.png",
