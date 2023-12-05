@@ -17,7 +17,8 @@ namespace Proper.Context.Migrations
                     ImageURL = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ButtonText = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ButtonText = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    BannerPosition = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

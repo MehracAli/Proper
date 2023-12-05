@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Proper.Context\Proper.Context.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

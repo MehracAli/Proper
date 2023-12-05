@@ -1,14 +1,11 @@
 ﻿@model HomeVM
-@{
-    ViewData["Title"] = "Home Page";
-}
 <section id="FruitCustomize">
     <div class="customizeAndImage">
-        <div class="customizeImage">
+        <div class="customizeImage" style="background-image: url('@Model.BannerTopVM.ImageURL')">
             <div class="button">
                 <a href="">
                     <button class="btn btn-light">
-                        Customize your fruit <i class="bi bi-chevron-right"></i>
+                        @Model.BannerTopVM.ButtonText <i class="bi bi-chevron-right"></i>
                     </button>
                 </a>
             </div>
@@ -19,9 +16,9 @@
                     <div class="row">
                         <div class="text-button col-8">
                             <div class="text">
-                                <p>Customize step by step.</p>
+                                <p>@Model.BannerTopVM.Title</p>
                                 <h1>
-                                    Customize your own fruit salad with natural ingredients.
+                                    @Model.BannerTopVM.Description
                                 </h1>
                             </div>
                             <div class="button">
@@ -53,7 +50,7 @@
                 <div class="image-info">
                     <div class="image-icon">
                         <div class="image">
-                            <img src="./assets/images/morBanan.png" alt="Product">
+                            <img src="~/./assets/images/morBanan.png" alt="Product">
                         </div>
                         <div class="heartIcon">
                             <i class="bi bi-heart"></i>
@@ -83,7 +80,7 @@
                 <div class="image-info">
                     <div class="image-icon">
                         <div class="image">
-                            <img src="./assets/images/kiviciyelek.png" alt="Product">
+                            <img src="~/./assets/images/kiviciyelek.png" alt="Product">
                         </div>
                         <div class="heartIcon">
                             <i class="bi bi-heart"></i>
@@ -113,7 +110,7 @@
                 <div class="image-info">
                     <div class="image-icon">
                         <div class="image">
-                            <img src="./assets/images/banansefteli.png" alt="Product">
+                            <img src="~/./assets/images/banansefteli.png" alt="Product">
                         </div>
                         <div class="heartIcon">
                             <i class="bi bi-heart"></i>
@@ -143,7 +140,7 @@
                 <div class="image-info">
                     <div class="image-icon">
                         <div class="image">
-                            <img src="./assets/images/uzumbanan.png" alt="Product">
+                            <img src="~/./assets/images/uzumbanan.png" alt="Product">
                         </div>
                         <div class="heartIcon">
                             <i class="bi bi-heart"></i>
@@ -192,7 +189,7 @@
             <div class="row gy-3 processes">
                 <div class="col-12 col-lg-3 processFruits1" data-aos="flip-down">
                     <div class="process-image">
-                        <img src="./assets/images/FruitsProcess.png" alt="">
+                        <img src="~/./assets/images/FruitsProcess.png" alt="">
                     </div>
                     <div class="process-name">
                         <h2 class="name1">Fruits</h2>
@@ -207,7 +204,7 @@
                 </div>
                 <div class="col-12 col-lg-3 processFruits2" data-aos="flip-down">
                     <div class="process-image">
-                        <img src="./assets/images/customizeFruit.png" alt="">
+                        <img src="~/./assets/images/customizeFruit.png" alt="">
                     </div>
                     <div class="process-name">
                         <h2 class="name2">Customize</h2>
@@ -221,7 +218,7 @@
                 </div>
                 <div class="col-12 col-lg-3 processFruits3" data-aos="flip-down">
                     <div class="process-image">
-                        <img src="./assets/images/deliveryIcon.png" alt="">
+                        <img src="~/./assets/images/deliveryIcon.png" alt="">
                     </div>
                     <div class="process-name">
                         <h2 class="name3">Delivery</h2>
@@ -234,7 +231,7 @@
                 </div>
                 <div class="col-12 col-lg-3 processFruits4" data-aos="flip-down">
                     <div class="process-image">
-                        <img src="./assets/images/yourBowl.png" alt="">
+                        <img src="~/./assets/images/yourBowl.png" alt="">
                     </div>
                     <div class="process-name">
                         <h2 class="name4">Your Bowl</h2>
@@ -267,7 +264,7 @@
             </div>
         </div>
         <div class="orchardImage">
-            <img src="./assets/images/Orchard.png" alt="">
+            <img src="~/./assets/images/Orchard.png" alt="">
         </div>
     </div>
 </section>

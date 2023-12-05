@@ -1,11 +1,11 @@
-﻿namespace Proper.Areas.Admin.ViewModels.BannerVMs
+﻿namespace Proper.Areas.Admin.ViewModels.Banners
 {
-    public class BannerCrudVM
+    public class BannerAdminVM
     {
         public string? ImageURL { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }
         public string? ButtonText { get; set; }
-        public string? BannerType { get; set; }
+        public string? BannerPosition { get; set; }
     }
 }

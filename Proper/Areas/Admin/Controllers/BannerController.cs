@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-
-using Proper.Areas.Admin.ViewModels.Banner;
-using Proper.Areas.Admin.ViewModels.BannerVMs;
+using Microsoft.CodeAnalysis.Differencing;
+using Microsoft.EntityFrameworkCore;
+using Proper.Areas.Admin.ViewModels.Banners;
+using Proper.Areas.Admin.ViewModels.MainVMs;
 using Proper.Business.Utilities.Extensions;
 using Proper.Context.Contexts;
 using Proper.Core.Entities.Banners;
@@ -16,6 +17,7 @@ namespace Proper.Areas.Admin.Controllers
         private readonly IMapper _mapper;
         private readonly IWebHostEnvironment _env;
 
+
         public BannerController(ProperDbContext context, IMapper mapper, IWebHostEnvironment env)
         {
             _context = context;
@@ -24,29 +26,23 @@ namespace Proper.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        [IgnoreAntiforgeryToken]
-        public async Task<IActionResult> Create([FromForm] BannerCreateVM bannerCreateVM)
+        public async Task<ActionResult> Edit(int Id, BannerEditVM bannerEditVM)
         {
-            if (!ModelState.IsValid) return RedirectToAction("Index", "Card");
+            Banner? banner = await _context.Banners.FirstOrDefaultAsync(b => b.Id.Equals(Id));
 
-            if (!bannerCreateVM.Image.CheckFile())
+            if (!bannerEditVM.Image.CheckFile(300))
             {
                 return RedirectToAction("Index", "Card");
             }
 
-            Banner newBanner = _mapper.Map<Banner>(bannerCreateVM);
-            newBanner.ImageURL = await FileUpload.SaveFile(_env.WebRootPath,
-                                                           bannerCreateVM.Image,
-                                                           "assets", "images", "home", "banners");
+            bannerEditVM.Id = Id;
+            banner.ImageURL = await FileUpload.SaveFile(_env.WebRootPath, 
+                                                        bannerEditVM.Image, 
+                                                        "assets", "images","home","banners");
+            _mapper.Map(bannerEditVM, banner);
 
-            await _context.Banners.AddAsync(newBanner);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Card");
-        }
-        
-        public async Task<IActionResult> Edit([FromForm] BannerEditVM bannerEditVM)
-        {
-            return Json(bannerEditVM);
         }
     }
 }

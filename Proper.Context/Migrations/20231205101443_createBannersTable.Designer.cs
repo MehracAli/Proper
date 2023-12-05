@@ -11,8 +11,8 @@ using Proper.Context.Contexts;
 namespace Proper.Context.Migrations
 {
     [DbContext(typeof(ProperDbContext))]
-    [Migration("20231201124448_addBannerTypeColToBanner")]
-    partial class addBannerTypeColToBanner
+    [Migration("20231205101443_createBannersTable")]
+    partial class createBannersTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,8 +31,9 @@ namespace Proper.Context.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("BannerType")
-                        .HasColumnType("int");
+                    b.Property<string>("BannerPosition")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ButtonText")
                         .IsRequired()

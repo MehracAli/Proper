@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Proper.Areas.Admin.ViewModels.BannerVMs;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Proper.Areas.Admin.ViewModels.Banners;
 using Proper.Areas.Admin.ViewModels.MainVMs;
-using AutoMapper;
 using Proper.Context.Contexts;
+using Proper.Core.Entities.Banners;
+using Proper.Core.Enums;
 
 namespace Proper.Areas.Admin.Controllers
 {
@@ -19,21 +20,18 @@ namespace Proper.Areas.Admin.Controllers
             _mapper = mapper;
         }
 
-        public async Task<IActionResult> Index()
+        public  IActionResult Index()
         {
-            HomeCrudVM homeCrudVM = new()
-            {
-                BannersVM = await _context.Banners.Select(b => new BannerCrudVM()
-                {
-                    ImageURL = b.ImageURL,
-                    Title = b.Title,
-                    Description = b.Description,
-                    ButtonText = b.Title,
-                    BannerType = b.BannerType,
+            Banner? bannerTop =  _context.Banners.FirstOrDefault(b => b.BannerPosition.Equals(BannerPosition.Top.ToString()));
+            Banner? bannerBottom = _context.Banners.FirstOrDefault(b => b.BannerPosition.Equals(BannerPosition.Bottom.ToString()));
 
-                }).ToListAsync()
+            CardIndexVM indexVM = new ()
+            {
+                BannerTopVM = _mapper.Map<BannerTopVM>(bannerTop),
+                BannerBottomVM = _mapper.Map<BannerBottomVM>(bannerBottom)
             };
-            return View(homeCrudVM);
+
+            return View(indexVM);
         }
     }
 }

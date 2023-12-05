@@ -24,12 +24,18 @@ namespace Proper.Business.Utilities.Extensions
                 await formFile.CopyToAsync(fileStream);
             }
 
+            fileRoot = fileRoot.Replace("\\", "/");
+
             return fileRoot;
         }
 
-        public static bool CheckFile(this IFormFile formFile)
+
+        /// <summary>
+        /// Bu metod, [IFormFile obyektərinin ölçü və tiplərini yoxlayır].
+        /// </summary>
+        public static bool CheckFile(this IFormFile formFile, int kb)
         {
-            if (formFile.Length/1024 > 300)
+            if (formFile.Length/1024 > kb)
             {
                 return false;
             }

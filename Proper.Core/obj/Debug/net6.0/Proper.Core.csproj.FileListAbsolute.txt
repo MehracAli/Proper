@@ -9,3 +9,4 @@ D:\Programming\Proper\Backend\Proper.Core\obj\Debug\net6.0\Proper.Core.dll
 D:\Programming\Proper\Backend\Proper.Core\obj\Debug\net6.0\refint\Proper.Core.dll
 D:\Programming\Proper\Backend\Proper.Core\obj\Debug\net6.0\Proper.Core.pdb
 D:\Programming\Proper\Backend\Proper.Core\obj\Debug\net6.0\ref\Proper.Core.dll
+D:\Programming\Proper\Backend\Proper.Core\obj\Debug\net6.0\Proper.Core.csproj.AssemblyReference.cache

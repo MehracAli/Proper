@@ -2,6 +2,7 @@
 {
     public class HomeVM
     {
-        public BannerVM? BannerVM { get; set; }
+        public BannerTopHomeVM BannerTopVM { get; set; }
+        public BannerBottomHomeVM BannerBottomVM { get; set; }
     }
 }

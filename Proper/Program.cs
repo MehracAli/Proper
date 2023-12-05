@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Proper.Context.Contexts;
+using Proper.Core.Entities;
 
 var builder = WebApplication.CreateBuilder();
 
@@ -11,6 +13,20 @@ builder.Services.AddDbContext<ProperDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
 
+builder.Services.AddIdentity<User, IdentityRole>(opt =>
+{
+    opt.User.RequireUniqueEmail = true;
+    opt.SignIn.RequireConfirmedEmail = true;
+    opt.SignIn.RequireConfirmedAccount = true;
+    opt.Password.RequireNonAlphanumeric = true;
+    opt.Password.RequiredLength = 8;
+    opt.Password.RequireDigit = true;
+    opt.Password.RequireLowercase = true;
+    opt.Password.RequireUppercase = true;   
+    opt.Lockout.MaxFailedAccessAttempts = 5;
+    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(30);
+
+}).AddDefaultTokenProviders().AddEntityFrameworkStores<ProperDbContext>();
 
 var app = builder.Build();
 
